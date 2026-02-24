@@ -1,0 +1,2 @@
+streamlit
+pandas  # if you add it later
