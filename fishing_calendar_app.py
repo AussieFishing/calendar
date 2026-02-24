@@ -1,3 +1,4 @@
+import streamlit as st
 # ================== LOAD ALL DATA ==================
 @st.cache_data
 def load_data():
