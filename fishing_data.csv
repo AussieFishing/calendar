@@ -3,5 +3,5 @@ January,NSW East,Snapper,Good,Medium 4-8kg rod, paternoster rig...,Dawn & dusk..
 January,NSW East,Flathead,Good,Light spin...,Dawn & dusk...,Same as above,Same
 ... (keep all your existing rows)
 # Just append the two new columns to every row with:
-# closure_notes = "Check current DPI via FishSmart app – rules change"
+# closure_notes = "Check current DPI via FishSmart app. Rules change"
 # reserve_notes = "Standard unless noted in specific location"
