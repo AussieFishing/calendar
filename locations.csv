@@ -2,14 +2,14 @@ location_name,zone,location_type,closure_notes,reserve_notes,official_link,state
 Urangan Pier,QLD South,Pier/Wharf,No seasonal closure – check bag/size limits year-round.,No major reserve restrictions,https://www.daf.qld.gov.au/fishing,QLD,-25.2950,152.9200
 Palm Cove Jetty,QLD North,Jetty/Pier,No seasonal closure (east coast barramundi open year-round).,Standard croc signage in FNQ,https://www.daf.qld.gov.au/fishing,QLD,-16.7500,145.6700
 Trinity Inlet Portsmith,QLD North,Estuary/Channels,No seasonal closure (east coast barramundi open year-round).,GBRMP zoning - check maps,https://www.daf.qld.gov.au/fishing,QLD,-16.9300,145.7800
-Yorkeys Knob,QLD North,Beach/Estuary mouth,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8000,145.6200
-Machans Beach,QLD North,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8400,145.7400
-Barron River Freshwater Creek,QLD North,Estuary/River,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8700,145.7300
-Ross Creek Rockhampton,QLD Central,Estuary/Creek,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3800,150.5200
-Tannum Sands,QLD Central,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.9500,151.3600
-Bangalee Beach,QLD Central,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.6800,150.8800
-Rosslyn Bay,QLD Central,Harbour/Rock wall,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.1600,150.7900
-Causeway Rockhampton,QLD Central,River/Estuary,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3700,150.5100
+Yorkeys Knob,QLD North,Beach/Estuary mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8000,145.6200
+Machans Beach,QLD North,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8400,145.7400
+Barron River Freshwater Creek,QLD North,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8700,145.7300
+Ross Creek Rockhampton,QLD Central,Estuary/Creek,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3800,150.5200
+Tannum Sands,QLD Central,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.9500,151.3600
+Bangalee Beach,QLD Central,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.6800,150.8800
+Rosslyn Bay,QLD Central,Harbour/Rock wall,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.1600,150.7900
+Causeway Rockhampton,QLD Central,River/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3700,150.5100
 Moreton Bay Tingalpa Creek,QLD South,Estuary/Creek,Snapper & pearl perch closed 15 July – 15 August each year.,Moreton Bay Marine Park zones,https://www.daf.qld.gov.au/fishing,QLD,-27.4800,153.2000
 Brisbane River Gateway Bridge area,QLD South,River/Wharves,Snapper & pearl perch closed 15 July – 15 August each year.,Standard urban rules,https://www.daf.qld.gov.au/fishing,QLD,-27.4700,153.0200
 Gold Coast Broadwater The Spit,QLD South,Estuary/Beach,Snapper & pearl perch closed 15 July – 15 August each year.,Gold Coast waterways rules,https://www.daf.qld.gov.au/fishing,QLD,-27.9300,153.4000
@@ -126,7 +126,7 @@ Whyalla Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size lim
 Fowlers Bay,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-31.8300,132.4100
 Haslam Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-32.5300,134.2200
 Talia Beach,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.3700,134.4300
-Lock's Well,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.6700,134.8800
+Locks Well,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.6700,134.8800
 Tumby Bay Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-34.3800,136.1000
 Marion Bay,SA Yorke Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-35.2500,136.9700
 Coffin Bay,SA Eyre Peninsula,Beach/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-34.6200,135.4600
@@ -135,24 +135,24 @@ Emu River Burnie,TAS North,River/Estuary,No seasonal closure – check bag/size 
 Duck River Smithton,TAS North West,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-40.7800,144.9800
 Pirates Bay Tasman Peninsula,TAS South East,Rock platform,No seasonal closure – check bag/size limits year-round.,Tasman Peninsula Marine Park zones,https://fishing.tas.gov.au,TAS,-43.0300,147.9500
 St Helens Breakwater,TAS North East,Breakwall,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.3200,148.2500
-East Coast Rivers (e.g. Scamander),TAS East,River Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.4600,148.2600
+East Coast Rivers Scamander,TAS East,River Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.4600,148.2600
 Arthurs Lake,TAS Central Highlands,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.8700,146.5500
 Four Springs Lake,TAS North West,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.3800,146.3200
 Derwent River Hobart,TAS South,River,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-42.8800,147.3300
 Tyenna River,TAS South West,River,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-42.7200,146.6600
-Stokes Hill Wharf,Darwin,NT,Wharf,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4700,130.8500
-East Point,Darwin,NT,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4100,130.8300
-Buffalo Creek,Darwin,NT,Estuary/Creek,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3400,130.9000
-Rapid Creek,Darwin,NT,Creek Mouth,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8700
-Dripstone Cliffs,Darwin,NT,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8500
-Lee Point,Darwin,NT,Rock/Beach,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3300,130.9000
-Mandorah Jetty,Darwin,NT,Jetty,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4800,130.7500
-Lake Burley Griffin,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3000,149.1200
-Molonglo River Reserve,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,149.0800
-Bowen District Park,ACT,Canberra,Park/River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1400
-Cotter River,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,148.9500
-Murrumbidgee River ACT,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.0500
-Lake Tuggeranong,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.4200,149.0900
-Lake Ginninderra,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2100,149.0700
-Sullivans Creek,ACT,Canberra,Creek,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1200
-Queanbeyan River,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.2300
+Stokes Hill Wharf,NT Darwin,Wharf,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4700,130.8500
+East Point,NT Darwin,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4100,130.8300
+Buffalo Creek,NT Darwin,Estuary/Creek,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3400,130.9000
+Rapid Creek,NT Darwin,Creek Mouth,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8700
+Dripstone Cliffs,NT Darwin,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8500
+Lee Point,NT Darwin,Rock/Beach,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3300,130.9000
+Mandorah Jetty,NT Darwin,Jetty,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4800,130.7500
+Lake Burley Griffin,ACT Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3000,149.1200
+Molonglo River Reserve,ACT Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,149.0800
+Bowen District Park,ACT Canberra,Park/River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1400
+Cotter River,ACT Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,148.9500
+Murrumbidgee River ACT,ACT Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.0500
+Lake Tuggeranong,ACT Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.4200,149.0900
+Lake Ginninderra,ACT Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2100,149.0700
+Sullivans Creek,ACT Canberra,Creek,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1200
+Queanbeyan River,ACT Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.2300
