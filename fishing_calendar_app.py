@@ -1,8 +1,9 @@
 import streamlit as st
+import pandas as pd
 from datetime import datetime
-import calendar  # for month names
+import calendar
 
-# ================== DATA (expand as needed) ==================
+# ================== ZONES (unchanged from previous) ==================
 zones = {
     "Sydney": "NSW East", "Newcastle": "NSW East", "Wollongong": "NSW East",
     "Brisbane": "QLD South", "Gold Coast": "QLD South", "Sunshine Coast": "QLD South",
@@ -15,73 +16,99 @@ zones = {
     "Other / National": "National (default)"
 }
 
-# Example monthly data (add more months/species from earlier response or sources)
-# In real version, load from CSV/JSON for easy updates
-monthly_targets = {
-    "January": {
-        "times": "Dawn & dusk + 2 hrs around high/low tide. Major solunar periods best.",
-        "species": [
-            ("Barramundi", "Great in NT/QLD North", "Medium-heavy spin rod 6-15kg, hardbodies or live bait, 40-80lb leader."),
-            ("Snapper", "Good nationwide", "Medium 4-8kg rod, paternoster rig with pilchards/squid, 4/0-8/0 circle hooks."),
-            ("Flathead", "Good", "Light spin 1-4kg, soft plastics on 1/4oz jighead or running sinker."),
-            ("Kingfish", "Great in NSW", "Heavy 8-15kg, live bait or poppers.")
-        ]
-    },
-    "February": {
-        "times": "Same as above — focus on major solunar + incoming tides for estuaries.",
-        "species": [
-            ("Striped Marlin", "Great NSW offshore", "Heavy trolling 15-24kg, skirted lures."),
-            ("Snapper", "Good", "Paternoster rig."),
-            ("Flathead", "Good", "Soft plastics."),
-            ("Kingfish", "Excellent", "Live bait rigs.")
-        ]
-    },
-    # Add March–December similarly...
-    # For full year, consider loading from a CSV file with pd.read_csv()
-}
+# ================== LOAD ALL DATA ==================
+@st.cache_data
+def load_data():
+    try:
+        loc_df = pd.read_csv("locations.csv")
+        fish_df = pd.read_csv("fishing_data.csv")
+        gear_df = pd.read_csv("gear_data.csv")
+        return loc_df, fish_df, gear_df
+    except FileNotFoundError as e:
+        st.error(f"Missing file: {e}. Ensure locations.csv, fishing_data.csv, and gear_data.csv exist.")
+        return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
 
-# Fallback
-default_month = datetime.now().strftime("%B")
-if default_month not in monthly_targets:
-    default_month = "January"
+locations_df, fishing_df, gear_df = load_data()
 
 # ================== APP ==================
 st.set_page_config(page_title="Aussie Fishing Calendar", layout="wide")
-st.title("🎣 Australian Fishing Calendar")
-st.markdown("Enter your location and month for best bite times, target species, and gear suggestions. Always check state rules (e.g., NSW DPI, QLD Fisheries).")
+st.title("🎣 Australian Fishing Calendar – Specific Locations & Gear")
 
-col1, col2 = st.columns(2)
+st.markdown("Search a specific spot, pick a date, and get compliant rules + targeted gear setups. **Always verify with FishSmart app / DPI site** before heading out.")
+
+col1, col2 = st.columns([2, 1])
 
 with col1:
-    location = st.selectbox("General Location", options=list(zones.keys()), index=0)  # Sydney default
+    location_list = sorted(locations_df['location_name'].tolist())
+    selected_location = st.selectbox(
+        "🔍 Search location/estuary (e.g. Preddy’s Wharf)",
+        options=location_list,
+        index=0
+    )
 
 with col2:
-    month_options = list(calendar.month_name)[1:]  # Jan–Dec
-    selected_month = st.selectbox("Month", options=month_options, index=month_options.index(default_month))
+    selected_date = st.date_input("Pick a Date", value=datetime.today())
 
-# Optional: Add date picker for precise day (future enhancement)
-# selected_date = st.date_input("Pick a specific date (optional)", value=datetime.now())
+# Derive details
+loc_row = locations_df[locations_df['location_name'] == selected_location].iloc[0]
+zone = loc_row['zone']
+month_name = calendar.month_name[selected_date.month]
 
-zone = zones.get(location, "National (default)")
+# Filter species for zone + month
+filtered_species = fishing_df[
+    (fishing_df['month'] == month_name) &
+    (fishing_df['zone'].str.contains(zone.split(' (')[0]))
+]
 
-data = monthly_targets.get(selected_month, monthly_targets["January"])
+st.subheader(f"📍 {selected_location} — {month_name} {selected_date.year}")
+st.info(f"**Zone:** {zone}")
 
-st.subheader(f"📅 {selected_month} 2026 – {location} ({zone})")
+# Rules / Warnings
+st.markdown("### ⚠️ DPI & Reserve Rules")
+st.markdown(f"**Closures:** {loc_row['closure_notes']}")
+st.markdown(f"**Marine/Aquatic Reserve:** {loc_row['reserve_notes']}")
+st.markdown(f"[Official DPI info]({loc_row['official_link']})")
 
-st.info(f"⏰ Best Times: {data['times']}")
-st.markdown("• Dawn/dusk strongest • Check daily tides/solunar: tides4fishing.com/au or fishingreminder.com")
-st.markdown("• Major periods: moon overhead/underfoot • Minor: moonrise/set")
+st.markdown("---")
 
-st.subheader("🐟 Top Target Species & Recommended Gear/Rigs")
-for species, rating, gear in data["species"]:
-    st.markdown(f"**{species}** ({rating})")
-    st.markdown(f"Gear/Rig: {gear}")
-    st.markdown("---")
+if filtered_species.empty:
+    st.warning("No species data for this zone/month – expand fishing_data.csv.")
+else:
+    st.subheader("🐟 Target Species & Recommended Gear Setups")
+    st.caption("Gear is general/recommended for the species — adjust for conditions. Check bag/size limits.")
 
-# Monetization placeholders (add later)
-st.sidebar.markdown("### Support the App")
-st.sidebar.markdown("[Affiliate: Buy gear at BCF](https://www.bcf.com.au/?aff=yourid)")  # Replace with real link
-st.sidebar.markdown("Want premium features? (hyper-local, alerts, PDFs) → Coming soon!")
+    for _, row in filtered_species.iterrows():
+        species = row['species']
+        
+        # Match gear
+        gear_match = gear_df[gear_df['species'].str.lower() == species.lower()]
+        if not gear_match.empty:
+            gear = gear_match.iloc[0]
+        else:
+            gear = None  # fallback if species missing in gear file
 
-if st.button("Refresh / Update"):
+        with st.expander(f"{species} ({row['rating']})"):
+            st.markdown(f"**Best times (general):** {row['best_times_notes']}")
+            st.markdown(f"**Gear/Rig Notes:** {row['gear_rig']}")
+
+            if gear is not None:
+                st.markdown("**Recommended Setup:**")
+                st.markdown(f"- **Rod:** {gear['rod']}")
+                st.markdown(f"- **Reel:** {gear['reel']}")
+                st.markdown(f"- **Line/Leader:** {gear['line_leader_weight']}")
+                st.markdown(f"- **Rig:** {gear['rig']}")
+                st.markdown(f"- **Bait/Lure:** {gear['bait_or_lure']}")
+            else:
+                st.caption("Gear details not yet added for this species – update gear_data.csv.")
+
+            st.markdown("---")
+
+# Sidebar
+st.sidebar.markdown("### Quick Resources")
+st.sidebar.markdown("[FishSmart NSW App](https://www.dpi.nsw.gov.au/fishing/recreational/resources/fishsmart-app)")
+st.sidebar.markdown("[DPI Closures](https://www.dpi.nsw.gov.au/fishing/closures)")
+st.sidebar.markdown("[Tides & Solunar](https://tides4fishing.com/au)")
+st.sidebar.markdown("[Buy Gear @ BCF (affiliate)](https://www.bcf.com.au/)")  # Add real affiliate if ready
+
+if st.button("Refresh"):
     st.rerun()
