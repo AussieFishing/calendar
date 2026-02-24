@@ -1,27 +1,158 @@
 location_name,zone,location_type,closure_notes,reserve_notes,official_link,state,latitude,longitude
-Urangan Pier,QLD South,Pier/Wharf,Open - standard bag/size limits.,No major reserve restrictions,https://www.daf.qld.gov.au/fishing,QLD,-25.2950,152.9200
-Palm Cove Jetty,QLD North,Jetty/Pier,Open. Check croc signage.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.7500,145.6700
-Trinity Inlet Portsmith,QLD North,Estuary,Open - barra popular.,GBRMP zoning,https://www.daf.qld.gov.au/fishing,QLD,-16.9300,145.7800
-Gold Coast Broadwater Spit,QLD South,Estuary,Open.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9300,153.4000
-Hornibrook Bridge,QLD South,Bridge,Open.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.2500,153.0700
-Shorncliffe Pier,QLD South,Pier,Open.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.3200,153.0800
-Bribie Island Northern Beaches,QLD South,Beach,Open.,National Park rules,https://www.daf.qld.gov.au/fishing,QLD,-26.8500,153.1200
-Tweed River Boyds Bay,NSW North Coast,Estuary,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-28.1700,153.5400
-Richmond River Ballina,NSW North Coast,Estuary,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-28.8700,153.5900
-Clarence River Yamba Middle Wall,NSW North Coast,Estuary,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-29.4300,153.3600
-Hastings River Port Macquarie,NSW North Coast,Estuary,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-31.4300,152.9200
-Lake Macquarie Belmont Bay,NSW Central Coast,Lake,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0300,151.6600
-Swansea Entrance,NSW Central Coast,Estuary,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0847,151.6655
-Blacksmiths Bait,NSW Central Coast,Estuary,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0819,151.6593
-Caves Beach,NSW Central Coast,Beach,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.1120,151.6617
-Lake Macquarie Tyre Reef,NSW Central Coast,Artificial Reef,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0640,151.6267
-Redhead Pinnacle,NSW Central Coast,Rock,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0353,151.7258
-Catherine Hill Bay Reef,NSW Central Coast,Reef,Open.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.1650,151.6367
-Sydney Harbour Rose Bay Wharf,NSW Sydney,Wharf,Ferry restrictions.,Harbour rules,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8700,151.2600
-Botany Bay Towra Point,NSW Sydney,Estuary,Rec Fishing Haven.,Aquatic reserve general zones,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0000,151.1700
-St Georges Basin,NSW South Coast,Lake,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.1800,150.6500
-Tuross Lake,NSW South Coast,Lake,Rec Fishing Haven.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.0700,150.1300
-Preddy’s Wharf,NSW South Coast,Wharf,Standard limits.,No reserve,https://www.dpi.nsw.gov.au/fishing,NSW,-35.8500,150.1800
-Jervis Bay Beaches,NSW South Coast,Beach,Open - marine park zones.,Check no-take,https://www.dpi.nsw.gov.au/fishing,NSW,-35.0500,150.7500
-Port Phillip Bay Altona Pier,VIC South,Pier,Open.,Standard,https://vfa.vic.gov.au,VIC,-37.8700,144.8300
-Mornington Pier,VIC South,Pier,Open.,Standard,https://vfa.vic.gov.au,VIC,-38.2200,145.0400
+Urangan Pier,QLD South,Pier/Wharf,No seasonal closure – check bag/size limits year-round.,No major reserve restrictions,https://www.daf.qld.gov.au/fishing,QLD,-25.2950,152.9200
+Palm Cove Jetty,QLD North,Jetty/Pier,No seasonal closure (east coast barramundi open year-round).,Standard croc signage in FNQ,https://www.daf.qld.gov.au/fishing,QLD,-16.7500,145.6700
+Trinity Inlet Portsmith,QLD North,Estuary/Channels,No seasonal closure (east coast barramundi open year-round).,GBRMP zoning - check maps,https://www.daf.qld.gov.au/fishing,QLD,-16.9300,145.7800
+Yorkeys Knob,QLD North,Beach/Estuary mouth,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8000,145.6200
+Machans Beach,QLD North,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8400,145.7400
+Barron River Freshwater Creek,QLD North,Estuary/River,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-16.8700,145.7300
+Ross Creek Rockhampton,QLD Central,Estuary/Creek,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3800,150.5200
+Tannum Sands,QLD Central,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.9500,151.3600
+Bangalee Beach,QLD Central,Beach,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.6800,150.8800
+Rosslyn Bay,QLD Central,Harbour/Rock wall,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.1600,150.7900
+Causeway Rockhampton,QLD Central,River/Estuary,No seasonal closure.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-23.3700,150.5100
+Moreton Bay Tingalpa Creek,QLD South,Estuary/Creek,Snapper & pearl perch closed 15 July – 15 August each year.,Moreton Bay Marine Park zones,https://www.daf.qld.gov.au/fishing,QLD,-27.4800,153.2000
+Brisbane River Gateway Bridge area,QLD South,River/Wharves,Snapper & pearl perch closed 15 July – 15 August each year.,Standard urban rules,https://www.daf.qld.gov.au/fishing,QLD,-27.4700,153.0200
+Gold Coast Broadwater The Spit,QLD South,Estuary/Beach,Snapper & pearl perch closed 15 July – 15 August each year.,Gold Coast waterways rules,https://www.daf.qld.gov.au/fishing,QLD,-27.9300,153.4000
+Hornibrook Bridge,QLD South,Bridge/Pier,Snapper & pearl perch closed 15 July – 15 August each year.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.2500,153.0700
+Shorncliffe Pier,QLD South,Pier,Snapper & pearl perch closed 15 July – 15 August each year.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.3200,153.0800
+Wellington Point Jetty,QLD South,Jetty,Snapper & pearl perch closed 15 July – 15 August each year.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.5100,153.2400
+Bribie Island Northern Beaches,QLD South,Beach/Estuary,Snapper & pearl perch closed 15 July – 15 August each year.,Bribie Island National Park rules,https://www.daf.qld.gov.au/fishing,QLD,-26.8500,153.1200
+Manly Boat Harbour,QLD South,Harbour/Wharf,Snapper & pearl perch closed 15 July – 15 August each year.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.4500,153.1900
+Snapper Rocks,QLD South,Beach/Rock,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.1600,153.5500
+Kirra Beach,QLD South,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.1700,153.5300
+Burleigh Heads Beach,QLD South,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.0800,153.4600
+Surfers Paradise Beach,QLD South,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.0000,153.4300
+Broadbeach Canal Reserve,QLD South,Canal/Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.0300,153.4300
+Runaway Bay,QLD South,Estuary/Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9100,153.4000
+Mermaid Waters,QLD South,Canal,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.0500,153.4300
+Sickle Park,QLD South,Park/Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.0200,153.4200
+Tallebudgera Creek Mouth,QLD South,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.1200,153.4700
+Currumbin Creek,QLD South,Estuary/Creek,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-28.1400,153.4900
+Paradise Point Foreshore,QLD South,Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9700,153.4000
+Labrador Marine Parade Platforms,QLD South,Fishing Platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9400,153.4000
+Burrows Street Biggera Creek,QLD South,Concrete Platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9300,153.4100
+Noosa River Mouth,QLD South,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Noosa River rules,https://www.daf.qld.gov.au/fishing,QLD,-26.3900,153.0700
+Maroochy River Mouth,QLD South,Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-26.6500,153.0900
+Mooloolaba Spit,QLD South,Beach/Spit,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-26.6800,153.1200
+Caloundra Kings Beach,QLD South,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-26.8000,153.1400
+Redcliffe Woody Point Jetty,QLD South,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.2700,153.1100
+Wynnum Manly Foreshore,QLD South,Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.4500,153.1900
+Cleveland Waterfront,QLD South,Waterfront,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.5200,153.2800
+Jacobs Well,QLD South,Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.7800,153.3700
+South Stradbroke Jumpinpin,QLD South,Beach/Channel,No seasonal closure – check bag/size limits year-round.,Standard,https://www.daf.qld.gov.au/fishing,QLD,-27.9500,153.4100
+Tweed River Boyds Bay Bridge,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-28.1700,153.5400
+Richmond River Ballina Emigrant Creek,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-28.8700,153.5900
+Clarence River Yamba Middle Wall,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-29.4300,153.3600
+Clarence River Romiaka Bridge,NSW North Coast,Estuary/Bridge,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-29.4200,153.3400
+Evans Head Breakwall,NSW North Coast,Breakwall,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-29.1200,153.4400
+Ballina Richmond Breakwall,NSW North Coast,Breakwall,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-28.8700,153.5900
+Coffs Harbour Jetty,NSW North Coast,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-30.3000,153.1400
+Nambucca Heads River Mouth,NSW North Coast,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-30.6500,153.0000
+Forster Tuncurry Bridge,NSW North Coast,Bridge/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-32.1800,152.5200
+Hastings River Port Macquarie,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-31.4300,152.9200
+Camden Haven River Dunbogan Bridge,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-31.6400,152.8300
+Manning River Taree,NSW North Coast,Estuary/River,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-31.9000,152.4800
+Port Stephens Shoal Bay Jetty,NSW North Coast,Jetty/Estuary,No seasonal closure – check bag/size limits year-round.,Port Stephens-Great Lakes Marine Park zones,https://www.dpi.nsw.gov.au/fishing,NSW,-32.7200,152.1000
+Newcastle Nobbys Beach,NSW Central Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-32.9200,151.7800
+Bar Beach Newcastle,NSW Central Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-32.9400,151.7800
+Lake Macquarie Belmont Bay,NSW Central Coast,Lake/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0300,151.6600
+Swansea Channel Entrance,NSW Central Coast,Estuary Entrance,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.0847,151.6655
+Caves Beach,NSW Central Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.1120,151.6617
+Sydney Harbour Rose Bay Ferry Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round (harbour shellfish restrictions may apply).,Sydney Harbour partial closures,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8700,151.2600
+Sydney Harbour Watsons Bay Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round (harbour shellfish restrictions may apply).,Sydney Harbour partial closures,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8600,151.2800
+Middle Head,NSW Sydney,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8300,151.2600
+Obelisk Beach,NSW Sydney,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8200,151.2600
+Clifton Gardens Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8400,151.2500
+Bradleys Head,NSW Sydney,Point/Rock,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8500,151.2500
+Walsh Bay Pier,NSW Sydney,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8600,151.2000
+McMahons Point Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8500,151.2000
+Balmoral Beach Baths,NSW Sydney,Beach/Baths,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8200,151.2600
+Lyne Park Rose Bay,NSW Sydney,Park/Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8700,151.2600
+Beulah Street Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8400,151.2200
+Jeffrey Street Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8500,151.2100
+Milsons Point Ferry Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8500,151.2100
+Blues Point Reserve,NSW Sydney,Reserve/Park,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8400,151.2000
+Ballast Point Park,NSW Sydney,Park,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8500,151.1800
+Bicentennial Park,NSW Sydney,Park,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8400,151.1700
+Botany Bay Towra Point,NSW Sydney,Estuary/Bay,No seasonal closure – check bag/size limits year-round.,Towra Point Aquatic Reserve - general zones only,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0000,151.1700
+Georges River Tom Uglys Bridge,NSW Sydney,Estuary/Bridge,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0000,151.1200
+Port Hacking Gunnamatta Bay,NSW Sydney,Estuary/Bay,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0700,151.1400
+Cronulla Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0500,151.1500
+Kurnell Boat Ramp,NSW Sydney,Ramp/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0000,151.2100
+Gymea Baths Gymea Bay,NSW Sydney,Beach/Rock pool,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0700,151.0800
+Grays Point,NSW Sydney,Estuary/Point,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.0500,151.0800
+Brighton-Le-Sands Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.9600,151.1500
+Gordons Bay,NSW Sydney,Rock platform/Bay,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.9200,151.2700
+Browns Rock La Perouse,NSW Sydney,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.9800,151.2300
+Coogee Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.9200,151.2600
+Maroubra Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.9400,151.2400
+Bondi Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8900,151.2700
+Manly Beach,NSW Sydney,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.8000,151.2900
+Narrabeen Lake,NSW Sydney,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.7100,151.3000
+Pittwater Bayview Wharf,NSW Sydney,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-33.6600,151.3000
+Hawkesbury River Brooklyn,NSW Sydney,Estuary/River,No seasonal closure – check bag/size limits year-round.,Hawkesbury Shelf Marine Park zones,https://www.dpi.nsw.gov.au/fishing,NSW,-33.5400,151.2000
+Shellharbour Harbour,NSW South Coast,Harbour,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.5800,150.8700
+Kiama Blowhole Point,NSW South Coast,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.6700,150.8600
+Ulladulla Harbour,NSW South Coast,Harbour,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.3600,150.4800
+Narooma Bar Beach,NSW South Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.2200,150.0500
+Merimbula Bar,NSW South Coast,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.8900,149.9300
+Long Beach Batemans Bay,NSW South Coast,Beach/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.7200,150.2000
+Greenwell Point Rock Walls,NSW South Coast,Rock wall,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.9100,150.5300
+Orient Point Wharf,NSW South Coast,Wharf,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.9200,150.5200
+Comerong Island Breakwall,NSW South Coast,Breakwall,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-34.8800,150.5800
+Sussex Inlet Canals,NSW South Coast,Canal,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.1600,150.5900
+Basin View Boat Ramp,NSW South Coast,Ramp/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.0700,150.6200
+Sanctuary Point,NSW South Coast,Beach/Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.1100,150.6100
+Wagonga Inlet Narooma,NSW South Coast,Inlet/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.2200,150.0500
+Corunna Lake,NSW South Coast,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.3000,150.1300
+Wallaga Lake,NSW South Coast,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.3500,150.1000
+Kianga Creek,NSW South Coast,Creek/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-36.2500,150.1300
+Durras Beach,NSW South Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.6600,150.2900
+Burrill Lake Entrance Beach,NSW South Coast,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://www.dpi.nsw.gov.au/fishing,NSW,-35.3800,150.4500
+Jervis Bay Hyams Beach,NSW South Coast,Beach,No seasonal closure – check bag/size limits year-round.,Jervis Bay Marine Park zones,https://www.dpi.nsw.gov.au/fishing,NSW,-35.1000,150.7000
+St Kilda Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-37.8670,144.9500
+Altona Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-37.8700,144.8300
+Brighton Beach Baths,VIC South,Beach/Baths,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-37.9100,144.9900
+Williamstown Beach,VIC South,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-37.8600,144.8900
+Mornington Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.2200,145.0400
+Portarlington Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.1100,144.6500
+Queenscliff Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.2700,144.6600
+Geelong Waterfront,VIC South,Foreshore,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.1400,144.3500
+Sorrento Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.3400,144.7400
+Rye Pier,VIC South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://vfa.vic.gov.au,VIC,-38.3800,144.8300
+Brighton Jetty,SA South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-35.0200,138.5200
+Glenelg Jetty,SA South,Pier,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-35.0000,138.5100
+Whyalla Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.0300,137.5900
+Fowlers Bay,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-31.8300,132.4100
+Haslam Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-32.5300,134.2200
+Talia Beach,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.3700,134.4300
+Lock's Well,SA Eyre Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-33.6700,134.8800
+Tumby Bay Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-34.3800,136.1000
+Marion Bay,SA Yorke Peninsula,Beach,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-35.2500,136.9700
+Coffin Bay,SA Eyre Peninsula,Beach/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-34.6200,135.4600
+Port Lincoln Jetty,SA Eyre Peninsula,Jetty,No seasonal closure – check bag/size limits year-round.,Standard,https://pir.sa.gov.au,SA,-34.7200,135.8600
+Emu River Burnie,TAS North,River/Estuary,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.0600,145.8900
+Duck River Smithton,TAS North West,Estuary Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-40.7800,144.9800
+Pirates Bay Tasman Peninsula,TAS South East,Rock platform,No seasonal closure – check bag/size limits year-round.,Tasman Peninsula Marine Park zones,https://fishing.tas.gov.au,TAS,-43.0300,147.9500
+St Helens Breakwater,TAS North East,Breakwall,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.3200,148.2500
+East Coast Rivers (e.g. Scamander),TAS East,River Mouth,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.4600,148.2600
+Arthurs Lake,TAS Central Highlands,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.8700,146.5500
+Four Springs Lake,TAS North West,Lake,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-41.3800,146.3200
+Derwent River Hobart,TAS South,River,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-42.8800,147.3300
+Tyenna River,TAS South West,River,No seasonal closure – check bag/size limits year-round.,Standard,https://fishing.tas.gov.au,TAS,-42.7200,146.6600
+Stokes Hill Wharf,Darwin,NT,Wharf,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4700,130.8500
+East Point,Darwin,NT,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4100,130.8300
+Buffalo Creek,Darwin,NT,Estuary/Creek,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3400,130.9000
+Rapid Creek,Darwin,NT,Creek Mouth,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8700
+Dripstone Cliffs,Darwin,NT,Rock platform,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3700,130.8500
+Lee Point,Darwin,NT,Rock/Beach,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.3300,130.9000
+Mandorah Jetty,Darwin,NT,Jetty,No seasonal closure – check bag/size limits year-round.,Standard croc warnings,https://nt.gov.au/leisure/fishing,NT,-12.4800,130.7500
+Lake Burley Griffin,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3000,149.1200
+Molonglo River Reserve,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,149.0800
+Bowen District Park,ACT,Canberra,Park/River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1400
+Cotter River,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3200,148.9500
+Murrumbidgee River ACT,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.0500
+Lake Tuggeranong,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.4200,149.0900
+Lake Ginninderra,ACT,Canberra,Lake,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2100,149.0700
+Sullivans Creek,ACT,Canberra,Creek,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.2800,149.1200
+Queanbeyan River,ACT,Canberra,River,No seasonal closure – check bag/size limits year-round.,Standard ACT rules,https://www.parks.act.gov.au,-35.3500,149.2300
