@@ -17,7 +17,7 @@ zones = {
     "Other / National": "National (default)"
 }
 
-# ================== LOAD DATA SAFELY ==================
+# ================== SAFE DATA LOADING ==================
 @st.cache_data
 def load_data():
     base_path = os.path.dirname(__file__) if "__file__" in globals() else os.getcwd()
@@ -25,13 +25,14 @@ def load_data():
     def safe_load(filename):
         full_path = os.path.join(base_path, filename)
         try:
-            return pd.read_csv(full_path)
+            df = pd.read_csv(full_path)
+            return df
         except FileNotFoundError:
             st.error(f"File not found: {filename}")
-            st.info(f"Make sure {filename} is in the same folder as the app script and committed to GitHub.")
+            st.info(f"Ensure {filename} is in the same folder as the app and pushed to GitHub.")
             return pd.DataFrame()
         except Exception as e:
-            st.error(f"Error reading {filename}: {str(e)}")
+            st.error(f"Error loading {filename}: {str(e)}")
             return pd.DataFrame()
 
     loc_df   = safe_load("locations.csv")
@@ -42,18 +43,19 @@ def load_data():
 
 locations_df, fishing_df, gear_df = load_data()
 
-# ================== MAIN APP ==================
+# ================== APP ==================
 st.set_page_config(page_title="Aussie Fishing Calendar", layout="wide")
-st.title("🎣 Australian Fishing Calendar")
+st.title("🎣 Australian Fishing Calendar – Location & Legal Size Guide")
 
 st.markdown("""
-Select a specific fishing location and date to see:
-- Local rules & marine reserve info
-- Target species for the month
+Search a specific spot, pick a date, and get:
+- Local rules & reserve info
+- Target species for the month (filtered by zone)
+- Legal min/max sizes
 - Recommended gear setups
 """)
 
-st.caption("Always verify current regulations via FishSmart (NSW) or Department of Agriculture and Fisheries (QLD) apps/websites. Rules change frequently.")
+st.caption("**Important:** Legal sizes & closures are approximate (Feb 2026 rules). Always verify via official apps/sites: FishSmart (NSW), Qld Fisheries, VFA (VIC), PIRSA (SA), Tas Inland Fisheries, NT Fisheries. Rules can change.")
 
 # ────────────────────────────────────────────────
 # INPUTS
@@ -62,13 +64,13 @@ col1, col2 = st.columns([3, 2])
 
 with col1:
     if locations_df.empty:
-        st.warning("No locations loaded. Please add locations.csv file.")
+        st.warning("No locations loaded. Add locations.csv file.")
         location_list = ["No locations available"]
     else:
         location_list = sorted(locations_df['location_name'].unique().tolist())
     
     selected_location = st.selectbox(
-        "🔍 Search & select location (e.g. Preddy’s Wharf, Urangan Pier, St Georges Basin)",
+        "🔍 Search location (e.g. Preddy’s Wharf, Urangan Pier, Brighton Jetty)",
         options=location_list,
         index=0 if location_list else 0
     )
@@ -82,7 +84,7 @@ with col2:
     )
 
 # ────────────────────────────────────────────────
-# DISPLAY SELECTED LOCATION INFO
+# DISPLAY LOCATION INFO
 # ────────────────────────────────────────────────
 if not locations_df.empty and selected_location in locations_df['location_name'].values:
     loc_row = locations_df[locations_df['location_name'] == selected_location].iloc[0]
@@ -94,23 +96,23 @@ if not locations_df.empty and selected_location in locations_df['location_name']
     st.subheader(f"📍 {selected_location}")
     st.caption(f"{month_name} {selected_date.year} • {zone} • {state}")
     
-    # Google Maps link
+    # Google Maps
     if 'latitude' in loc_row and 'longitude' in loc_row and pd.notna(loc_row['latitude']) and pd.notna(loc_row['longitude']):
         maps_url = f"https://www.google.com/maps?q={loc_row['latitude']},{loc_row['longitude']}"
         st.markdown(f"🗺️ [Open in Google Maps]({maps_url})")
     
-    # Rules & Reserves
+    # Rules
     st.markdown("### ⚠️ Local Rules & Reserves")
     st.markdown(f"**Closures / Restrictions:** {loc_row.get('closure_notes', 'Check current regulations')}")
     st.markdown(f"**Marine / Aquatic Reserve:** {loc_row.get('reserve_notes', 'Standard rules apply')}")
     
     if 'official_link' in loc_row and loc_row['official_link']:
-        st.markdown(f"[Official information →]({loc_row['official_link']})")
+        st.markdown(f"[Official info →]({loc_row['official_link']})")
     
     st.markdown("---")
     
     # ────────────────────────────────────────────────
-    # SPECIES & GEAR
+    # SPECIES & LEGAL SIZES + GEAR
     # ────────────────────────────────────────────────
     filtered_species = fishing_df[
         (fishing_df['month'] == month_name) &
@@ -118,19 +120,30 @@ if not locations_df.empty and selected_location in locations_df['location_name']
     ]
     
     if filtered_species.empty:
-        st.info(f"No species data recorded for {month_name} in {zone} yet.")
+        st.info(f"No species data for {month_name} in {zone} yet. Expand fishing_data.csv.")
     else:
-        st.subheader("🐟 Target Species & Recommended Gear")
-        st.caption("General recommendations for the zone/month. Adjust for conditions & check size/bag limits.")
+        st.subheader("🐟 Target Species – Legal Sizes & Gear")
+        st.caption("Legal sizes are minimum (min) and maximum (max) total length in cm. Closed = no take allowed.")
         
         for _, row in filtered_species.iterrows():
             species = row['species']
+            rating = row.get('rating', '—')
             
-            # Find matching gear
+            # Gear match
             gear_match = gear_df[gear_df['species'].str.lower() == species.lower()]
             gear = gear_match.iloc[0] if not gear_match.empty else None
             
-            with st.expander(f"{species}  ({row.get('rating', '—')})"):
+            with st.expander(f"{species} ({rating})"):
+                if rating == "Closed":
+                    st.warning("Closed season – no take allowed this month.")
+                else:
+                    min_cm = row.get('legal_min_cm', 'N/A')
+                    max_cm = row.get('legal_max_cm', None)
+                    size_text = f"Legal min: **{min_cm} cm**"
+                    if max_cm and max_cm != '':
+                        size_text += f" | Max: **{max_cm} cm**"
+                    st.markdown(size_text)
+                
                 st.markdown(f"**Best times (general):** {row.get('best_times_notes', 'Dawn & dusk + tide changes')}")
                 
                 if gear is not None:
@@ -141,25 +154,28 @@ if not locations_df.empty and selected_location in locations_df['location_name']
                     st.markdown(f"- Rig: **{gear['rig']}**")
                     st.markdown(f"- Bait/Lure: **{gear['bait_or_lure']}**")
                 else:
-                    st.caption("Gear recommendations not yet available for this species.")
+                    st.caption("Gear details not yet added – update gear_data.csv.")
                 
                 st.markdown("---")
 
 else:
-    st.warning("Selected location not found in database. Try another or update locations.csv")
+    st.warning("Selected location not found. Try another or update locations.csv.")
 
 # ────────────────────────────────────────────────
-# SIDEBAR RESOURCES
+# SIDEBAR
 # ────────────────────────────────────────────────
-st.sidebar.title("Quick Resources")
+st.sidebar.title("Resources")
 st.sidebar.markdown("- [NSW FishSmart App](https://www.dpi.nsw.gov.au/fishing/recreational/resources/fishsmart-app)")
-st.sidebar.markdown("- [NSW Fishing Rules & Closures](https://www.dpi.nsw.gov.au/fishing/closures)")
+st.sidebar.markdown("- [NSW Rules & Closures](https://www.dpi.nsw.gov.au/fishing/closures)")
 st.sidebar.markdown("- [QLD Fisheries](https://www.daf.qld.gov.au/business-priorities/fisheries)")
-st.sidebar.markdown("- [Tides & Solunar – tides4fishing.com/au](https://tides4fishing.com/au)")
-st.sidebar.markdown("- [Fishing Reminder](https://fishingreminder.com/au)")
+st.sidebar.markdown("- [VIC VFA Guide](https://vfa.vic.gov.au)")
+st.sidebar.markdown("- [SA PIRSA](https://pir.sa.gov.au)")
+st.sidebar.markdown("- [TAS Fishing](https://fishing.tas.gov.au)")
+st.sidebar.markdown("- [NT Fishing](https://nt.gov.au/leisure/fishing)")
+st.sidebar.markdown("- [Tides4Fishing AU](https://tides4fishing.com/au)")
 st.sidebar.markdown("---")
-st.sidebar.caption("Data approximate • Always verify current regulations")
+st.sidebar.caption("Data is indicative • Verify with official sources")
 
-if st.sidebar.button("Refresh all data"):
+if st.sidebar.button("Clear cache & refresh"):
     st.cache_data.clear()
     st.rerun()
